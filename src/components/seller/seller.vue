@@ -1,12 +1,10 @@
 <template>
-  <div class="header">
-    我是Header!
-  </div>
+  <div>我是seller</div>
 </template>
 
 <script>
   export default {
-    name: ''
+    name: 'seller'
   }
 </script>
 
