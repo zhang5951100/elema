@@ -7,6 +7,8 @@ import goods from './components/goods/goods'
 import ratings from './components/ratings/ratings'
 import seller from './components/seller/seller'
 
+import './common/stylus/index.styl'
+
 Vue.config.productionTip = false
 
 const routes = [
@@ -16,7 +18,8 @@ const routes = [
 ]
 
 const router = new Router({
-  routes
+  routes,
+  linkActiveClass: 'active'
 })
 
 Vue.use(Router)
@@ -28,3 +31,5 @@ new Vue({
   components: {App},
   template: '<App/>'
 })
+
+router.push('/goods')
